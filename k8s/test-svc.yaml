@@ -1,0 +1,21 @@
+{
+    "kind": "Service",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "test",
+         "namespace": "com-att-ocnp-mgmt"
+    },
+    "spec": {
+        "selector": {
+            "app": "test"
+        },
+        "ports": [
+            {
+                "protocol": "TCP",
+                "port": 80,
+                "targetPort": 8080
+            }
+        ],
+        "type": "NodePort"
+    }
+}
